@@ -1,0 +1,20 @@
+{
+  "domain": "example-sme.lab",
+  "records": [
+    {
+      "type": "TXT",
+      "name": "@",
+      "value": "v=spf1 include:_spf.google.com ~all"
+    },
+    {
+      "type": "TXT",
+      "name": "default._domainkey",
+      "value": "v=DKIM1; k=rsa; p=MIGfFAKE"
+    },
+    {
+      "type": "TXT",
+      "name": "_dmarc",
+      "value": "v=DMARC1; p=none; rua=mailto:dmarc@example-sme.lab"
+    }
+  ]
+}
